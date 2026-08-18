@@ -1,0 +1,14 @@
+{
+  "alignment_train": {
+    "response_truncation_fraction": 0.0053125,
+    "mean_prompt_tokens_dropped": 26.7753125
+  },
+  "alignment_control": {
+    "response_truncation_fraction": 0.0040625,
+    "mean_prompt_tokens_dropped": 26.0096875
+  },
+  "official_test": {
+    "response_truncation_fraction": 0.0039079461571862786,
+    "mean_prompt_tokens_dropped": 29.145462440295265
+  }
+}

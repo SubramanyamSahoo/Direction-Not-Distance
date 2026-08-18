@@ -1,0 +1,15 @@
+{
+  "started_unix": 1786369768.5844681,
+  "environment": {
+    "python": "3.12.3 (main, Jan 22 2026, 20:57:42) [GCC 13.3.0]",
+    "numpy": "1.26.4",
+    "torch": "2.7.0",
+    "torch_cuda": "12.8",
+    "gpu": "NVIDIA H100 PCIe",
+    "nvidia_smi": "NVIDIA H100 PCIe, 580.105.08, 350.00 W, 00000000:06:00.0"
+  },
+  "models_requested": [
+    "8b"
+  ],
+  "seed_override": null
+}
