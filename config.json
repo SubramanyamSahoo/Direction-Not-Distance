@@ -1,0 +1,76 @@
+{
+  "protocol": {
+    "max_length": 256,
+    "tokens_per_phase": 819200,
+    "num_phases": 6,
+    "learning_rate": 3e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.03,
+    "grad_clip": 1.0,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "lora_targets": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj"
+    ],
+    "data_seed": 42,
+    "hh_dataset": "Anthropic/hh-rlhf",
+    "hh_config": "harmless-base",
+    "owt_dataset": "Elriggs/openwebtext-100k",
+    "judge_model": "RLHFlow/ArmoRM-Llama3-8B-v0.1",
+    "regimes": [
+      "benign",
+      "conflict"
+    ],
+    "conditions": [
+      "unconstrained",
+      "global_projection",
+      "coordinate_mortality"
+    ],
+    "behavior_confidence": 0.95,
+    "behavior_half_width": 0.05
+  },
+  "models": {
+    "8b": {
+      "model_id": "Qwen/Qwen3-8B",
+      "short_name": "Qwen3-8B",
+      "pair_microbatch": 8,
+      "pair_grad_accum": 4,
+      "shift_microbatch": 16,
+      "shift_grad_accum": 2,
+      "eval_microbatch": 16,
+      "control_microbatch": 8,
+      "generation_microbatch": 8,
+      "seeds": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "inference_role": "primary"
+    },
+    "14b": {
+      "model_id": "Qwen/Qwen3-14B",
+      "short_name": "Qwen3-14B",
+      "pair_microbatch": 4,
+      "pair_grad_accum": 8,
+      "shift_microbatch": 8,
+      "shift_grad_accum": 4,
+      "eval_microbatch": 8,
+      "control_microbatch": 4,
+      "generation_microbatch": 4,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "inference_role": "scale_replication"
+    }
+  }
+}

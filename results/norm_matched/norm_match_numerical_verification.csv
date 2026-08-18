@@ -1,0 +1,2 @@
+rows,max_abs_norm_match_error_after_bf16,max_relative_norm_match_error_after_bf16,max_computed_rounding_bound,min_raw_vs_post_direction_cosine,mean_counterfactual_cm_killed_fraction
+84,4.76837158203125e-07,1.343927423618557e-07,0.1178527088886767,0.9999998211860656,0.4734796722020422

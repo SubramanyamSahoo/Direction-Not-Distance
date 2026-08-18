@@ -1,0 +1,40 @@
+NEW H100 PCIE: VERIFY BEFORE INSTALLING
+======================================
+python -c 'import ctypes; print("cuInit:", ctypes.CDLL("libcuda.so.1").cuInit(0))'
+python -c 'import torch; print(torch.cuda.is_available()); print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else "NO CUDA")'
+
+UPLOAD, EXTRACT, SET UP
+=======================
+unzip AAAI27_H100_PCIe_Directional_Control.zip
+cd AAAI27_H100_PCIe_Directional_Control
+bash setup_pcie_env.sh
+source .venv/bin/activate
+hf auth login
+
+CACHE EXACT REVISIONS
+=====================
+python -u prepare_assets.py 2>&1 | tee prepare_assets.log
+
+PRIMARY 8B RUN
+==============
+tmux new -s aaai27_8b
+bash run_train_8b.sh
+# detach: Ctrl+B, then D
+
+14B SCALE REPLICATION
+=====================
+tmux new -s aaai27_14b
+bash run_train_14b.sh
+
+INDEPENDENT JUDGE
+=================
+tmux new -s aaai27_judge
+bash run_judge.sh
+
+ANALYSIS
+========
+bash run_analyze.sh
+
+RESUME
+======
+Run the same training or judge command again. Completed phase/checkpoint files are skipped.

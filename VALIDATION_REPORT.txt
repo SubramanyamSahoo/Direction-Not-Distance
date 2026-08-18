@@ -1,0 +1,17 @@
+AAAI-27 H100 PCIe bundle validation report
+==========================================
+
+Validated in the build container:
+- Every Python file parses and byte-compiles.
+- Every shell script passes `bash -n`.
+- `config.json` passes protocol arithmetic and condition/regime validation.
+- The primary 8B design uses 7 paired seeds, which gives the declared exact-test resolution.
+- The 14B design is explicitly a 3-seed scale replication.
+- Phase token accounting is fixed at 819,200 loss-bearing target tokens per phase.
+- No source file contains a Hugging Face or GitHub token.
+- Output checkpointing and protocol-manifest safeguards are present.
+- Conflict training, conflict evaluation, alignment training, alignment control, and official test partitions are disjoint.
+- Paired methods receive a hash-derived common stochastic stream per model/seed/regime/phase.
+
+Runtime boundary:
+The complete Qwen3/ArmoRM run cannot be executed in this build container because it does not provide the user's H100 PCIe or cached Hub assets. The bundle therefore fails closed through `verify_h100_pcie.py`, exact asset manifests, and offline-mode launch scripts. Run `bash setup_pcie_env.sh` only after `cuInit: 0` on the new instance.

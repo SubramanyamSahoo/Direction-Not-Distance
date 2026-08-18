@@ -1,0 +1,19 @@
+{
+  "judge_model": "RLHFlow/ArmoRM-Llama3-8B-v0.1",
+  "judge_revision": "eb2676d20da2f2d41082289d23c59b9f7427f955",
+  "examples": 381,
+  "chosen_over_rejected_accuracy": 0.6220472440944882,
+  "chosen_over_rejected_wilson_lower": 0.5723699277568167,
+  "chosen_over_rejected_wilson_upper": 0.6692880274047416,
+  "validity_confidence": 0.95,
+  "validity_gate": "Wilson lower bound strictly greater than 0.5",
+  "calibration_passed": true,
+  "tie_fraction": 0.0,
+  "chosen_score_mean": 0.035639063041752544,
+  "rejected_score_mean": 0.03137069493532944,
+  "combined_score_std": 0.015688312346341615,
+  "chosen_input_at_max_length_fraction": 0.0,
+  "rejected_input_at_max_length_fraction": 0.0,
+  "judge_max_length": 4096,
+  "constant_output": false
+}

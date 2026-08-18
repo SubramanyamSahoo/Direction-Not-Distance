@@ -1,0 +1,5 @@
+model,regime,comparison,inference_role,primary_confirmatory_test,minimum_attainable_two_sided_p,mean_difference,p_exact,n
+Qwen3-14B,benign,direction_RMSE_minus_update_norm_RMSE,scale_replication,False,0.25,-4.6119009146304364e-05,0.75,3
+Qwen3-14B,conflict,direction_RMSE_minus_update_norm_RMSE,scale_replication,False,0.25,-3.379304541610692e-05,1.0,3
+Qwen3-8B,benign,direction_RMSE_minus_update_norm_RMSE,primary,True,0.015625,-0.00012198103305272247,0.0625,7
+Qwen3-8B,conflict,direction_RMSE_minus_update_norm_RMSE,primary,True,0.015625,-0.00010171430780773166,0.015625,7

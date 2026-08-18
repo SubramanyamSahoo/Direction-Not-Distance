@@ -1,0 +1,7 @@
+model,regime,condition_A,condition_B,metric,followup_role,mean_difference,p_exact,n
+Qwen3-8B,benign,coordinate_mortality,norm_matched,alignment_margin_mean,secondary_exploratory,0.1198842272694621,0.015625,7
+Qwen3-8B,benign,coordinate_mortality,norm_matched,shift_nll_improvement,secondary_exploratory,-0.017622814747977947,0.015625,7
+Qwen3-8B,benign,coordinate_mortality,norm_matched,relative_l2_drift,secondary_exploratory,0.009192781788962255,0.015625,7
+Qwen3-8B,conflict,coordinate_mortality,norm_matched,alignment_margin_mean,secondary_exploratory,0.0815960627847483,0.015625,7
+Qwen3-8B,conflict,coordinate_mortality,norm_matched,shift_nll_improvement,secondary_exploratory,-0.4202453635959807,0.015625,7
+Qwen3-8B,conflict,coordinate_mortality,norm_matched,relative_l2_drift,secondary_exploratory,-0.02676592128617424,0.015625,7

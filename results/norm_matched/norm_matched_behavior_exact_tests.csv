@@ -1,0 +1,7 @@
+model,regime,condition_A,condition_B,metric,followup_role,mean_difference,p_exact,n
+Qwen3-8B,benign,coordinate_mortality,norm_matched,judge_generated_mean,secondary_behavioral,0.0001814866777539983,0.71875,7
+Qwen3-8B,benign,coordinate_mortality,norm_matched,judge_win_vs_rejected,secondary_behavioral,0.0254968128983877,0.171875,7
+Qwen3-8B,benign,coordinate_mortality,norm_matched,judge_gap_vs_rejected,secondary_behavioral,0.00018148667775397142,0.71875,7
+Qwen3-8B,conflict,coordinate_mortality,norm_matched,judge_generated_mean,secondary_behavioral,0.0005479613054518723,0.6875,7
+Qwen3-8B,conflict,coordinate_mortality,norm_matched,judge_win_vs_rejected,secondary_behavioral,-0.018747656542932138,0.71875,7
+Qwen3-8B,conflict,coordinate_mortality,norm_matched,judge_gap_vs_rejected,secondary_behavioral,0.0005479613054518976,0.6875,7

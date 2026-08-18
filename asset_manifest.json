@@ -1,0 +1,11 @@
+{
+  "models": {
+    "Qwen/Qwen3-8B": "b968826d9c46dd6066d109eabc6255188de91218",
+    "Qwen/Qwen3-14B": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+    "RLHFlow/ArmoRM-Llama3-8B-v0.1": "eb2676d20da2f2d41082289d23c59b9f7427f955"
+  },
+  "datasets": {
+    "Anthropic/hh-rlhf": "09be8c5bbc57cb3887f3a9732ad6aa7ec602a1fa",
+    "Elriggs/openwebtext-100k": "2b7bfd980d5227806de62ac735f40712a4881273"
+  }
+}

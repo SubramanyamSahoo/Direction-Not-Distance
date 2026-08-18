@@ -1,0 +1,13 @@
+model,inference_role,metric,mean,ci95_lower_exact_bootstrap,ci95_upper_exact_bootstrap,seeds
+Qwen3-14B,scale_replication,base_alignment_alignment_accuracy,0.4346504509449005,0.4346504509449005,0.4346504509449005,3
+Qwen3-14B,scale_replication,post_alignment_alignment_accuracy,0.4945722818374634,0.4927775298555691,0.4965190107623736,3
+Qwen3-14B,scale_replication,alignment_stage_accuracy_gain,0.05992183089256283,0.058127078910668636,0.06186855981747308,3
+Qwen3-14B,scale_replication,base_alignment_alignment_margin_mean,-0.2679047286510467,-0.2679047286510467,-0.2679047286510467,3
+Qwen3-14B,scale_replication,post_alignment_alignment_margin_mean,-0.019982941448688434,-0.02171840171019231,-0.018332363882412422,3
+Qwen3-14B,scale_replication,alignment_stage_margin_gain,0.24792178720235825,0.24618632694085438,0.24957236476863429,3
+Qwen3-8B,primary,base_alignment_alignment_accuracy,0.4502822160720825,0.4502822160720825,0.4502822160720825,7
+Qwen3-8B,primary,post_alignment_alignment_accuracy,0.491098552942276,0.48991996901375906,0.49271135670798166,7
+Qwen3-8B,primary,alignment_stage_accuracy_gain,0.04081633687019345,0.039637752941676534,0.0424291406358991,7
+Qwen3-8B,primary,base_alignment_alignment_margin_mean,-0.1937956064939499,-0.1937956064939499,-0.1937956064939499,7
+Qwen3-8B,primary,post_alignment_alignment_margin_mean,-0.013714639469981142,-0.014500864768134636,-0.012836547089474569,7
+Qwen3-8B,primary,alignment_stage_margin_gain,0.18008096702396875,0.17929474172581522,0.1809590594044753,7

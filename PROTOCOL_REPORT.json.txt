@@ -1,0 +1,26 @@
+{
+  "alignment_partition_pairs": 3200,
+  "behavior_sample_required_worst_case": 381,
+  "minimum_primary_exact_test_seeds": 7,
+  "models": [
+    {
+      "model": "8b",
+      "role": "primary",
+      "seeds": 7,
+      "branches": 42,
+      "trained_phases": 252,
+      "exact_shift_target_tokens": 206438400
+    },
+    {
+      "model": "14b",
+      "role": "scale_replication",
+      "seeds": 3,
+      "branches": 18,
+      "trained_phases": 108,
+      "exact_shift_target_tokens": 88473600
+    }
+  ],
+  "total_exact_shift_target_tokens": 294912000,
+  "note": "This count excludes alignment training, full control-gradient passes, evaluation, and generation."
+}
+PROTOCOL CHECK PASSED

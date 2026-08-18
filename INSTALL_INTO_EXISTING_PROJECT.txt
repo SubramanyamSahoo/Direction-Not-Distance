@@ -1,0 +1,13 @@
+This follow-up is designed to be copied into the EXISTING completed project directory.
+It does not replace any original file.
+
+From /home/ubuntu after uploading this ZIP:
+
+unzip -o AAAI27_Targeted_NormMatched_Followup.zip
+cp -f AAAI27_Targeted_NormMatched_Followup/* ~/AAAI27_H100_PCIe_Directional_Control/
+cd ~/AAAI27_H100_PCIe_Directional_Control
+source .venv/bin/activate
+python -m py_compile run_norm_matched.py analyze_norm_matched.py analyze_hidden_cancellation.py score_norm_matched_behavior.py
+python verify_norm_matched_math.py
+
+Then launch with tmux using the commands in README_NORM_MATCHED.md / the ChatGPT instructions.
